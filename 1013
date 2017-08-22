@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(),b = sc.nextInt(),c = sc.nextInt(),m;
+        m = (a+b+Math.abs(a-b))/2;
+        m = (m+c+Math.abs(m-c))/2;
+        saida.println(m+" eh o maior");
+	}
+}
