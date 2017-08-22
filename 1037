@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        if((a>=0)&&(a<=25)){
+            saida.printf("Intervalo [0,25]\n");
+        }
+        if((a>25)&&(a<=50)){
+            saida.printf("Intervalo (25,50]\n");
+        }if((a>50)&&(a<=75)){
+            saida.printf("Intervalo (50,75]\n");
+        }
+        if((a>75)&&(a<=100)){
+            saida.printf("Intervalo (75,100]\n");
+        }
+        if(a>100||a<0){
+            saida.printf("Fora de intervalo\n");
+        }
+	}
+}
