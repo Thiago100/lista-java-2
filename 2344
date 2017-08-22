@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a==0) saida.println("E");
+        if(a>=1 && a<36) saida.println("D");
+        if(a>=36 && a<61) saida.println("C");
+        if(a>=61 &&  a<86) saida.println("B");
+        if(a>=86 && a<101) saida.println("A");
+	}
+}
