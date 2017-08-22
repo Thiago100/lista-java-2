@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.math.BigInteger;
+
+public class Main{
+	public static PrintStream saida=System.out;
+ 	public static Scanner sc=new Scanner(System.in);
+	 
+	
+	public static void main(String arg[]){
+	 
+	 ArrayList<Integer> a=new ArrayList<>();
+	  ArrayList<Integer> b=new ArrayList<>();
+	 int y=sc.nextInt();
+	a.add(y);
+	b.add(y);
+	y=sc.nextInt();
+	a.add(y);
+	b.add(y);
+	y=sc.nextInt();
+	a.add(y);
+	b.add(y);
+	
+	 Collections.sort(a);
+	 for(Object i:a){
+	 	saida.println((Integer)i);
+	 }
+	saida.println("");
+	
+	 for(Object i:b){
+	 	saida.println((Integer)i);
+	 }
+	}
+}
