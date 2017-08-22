@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble(),b = sc.nextDouble(),c = sc.nextDouble();
+		if(a>0 && b>0 && c>0){
+			if(a >= b+c || b >= a+c || c >= a+b){
+				sa.printf("NAO FORMA TRIANGULO\n");
+			}
+			else if( (Math.pow(a,2)) == ( (Math.pow(b,2)) + (Math.pow(c,2)) ) || (Math.pow(b,2)) == ( (Math.pow(a,2)) + (Math.pow(c,2)) ) || (Math.pow(c,2)) == ( (Math.pow(b,2)) + (Math.pow(a,2))) ){
+				sa.printf("TRIANGULO RETANGULO\n");
+			}
+			else if( (Math.pow(a,2)) > ((Math.pow(b,2)) + (Math.pow(c,2))) || (Math.pow(b,2)) > ((Math.pow(a,2)) + (Math.pow(c,2))) || (Math.pow(c,2)) > ((Math.pow(b,2)) + (Math.pow(a,2))) ){
+				sa.printf("TRIANGULO OBTUSANGULO\n");
+			}
+			else if( (Math.pow(a,2)) < ((Math.pow(b,2)) + (Math.pow(c,2))) || (Math.pow(b,2)) < ((Math.pow(a,2)) + (Math.pow(c,2))) || (Math.pow(c,2)) < ((Math.pow(b,2)) + (Math.pow(a,2))) ){
+				sa.printf("TRIANGULO ACUTANGULO\n");
+			}
+			if(a==b && b==c){
+				sa.printf("TRIANGULO EQUILATERO\n");
+			}
+			    if((a == b && a != c)  || (a == c && a != b) || (b == c && b != a)){
+				sa.printf("TRIANGULO ISOSCELES\n");
+			}
+		}
+   }
+}
