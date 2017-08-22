@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        double X = sc.nextDouble() , Y = sc.nextDouble();
+        if ((X>0)&&(Y>0)){
+            saida.printf("Q1\n");
+        }
+        else if ((X<0)&&(Y>0)){
+            saida.printf("Q2\n");
+        }
+        else if ((X<0)&&(Y<0)){
+            saida.printf("Q3\n");
+        }
+        else if ((X>0)&&(Y<0)){
+            saida.printf("Q4\n");
+        }
+        else if ((X==0)&&(Y==0)){
+            saida.printf("Origem\n");
+        }
+        else if ((X==0)&&(Y!=0)){
+            saida.printf("Eixo Y\n");
+        }
+        else if ((X!=0)&&(Y==0)){
+            saida.printf("Eixo X\n");
+        }
+
+	}
+}
