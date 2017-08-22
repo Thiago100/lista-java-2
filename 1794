@@ -1,0 +1,11 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt(),LA = sc.nextInt(),LB = sc.nextInt(),SA = sc.nextInt(),SB = sc.nextInt();
+        if(N>=LA && N<=LB && N>=SA && N<=SB)saida.printf("possivel\n");
+        else saida.printf("impossivel\n");
+	}
+}
