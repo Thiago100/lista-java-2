@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+
+
+public class Main{
+	public static PrintStream saida=System.out;
+ 	public static Scanner sc=new Scanner(System.in);
+	 
+	
+	public static void main(String arg[]){
+		 double a=sc.nextDouble(),b=sc.nextDouble(),c=sc.nextDouble(),d=sc.nextDouble();
+		 double media=(a*2+b*3+c*4+d)/10.0;
+		 String y=""+media;
+		 saida.printf("Media: %c%c%c\n",y.charAt(0),y.charAt(1),y.charAt(2));
+		 if(media>=7){
+		 	saida.println("Aluno aprovado.");
+		 }
+		 else if(media<5){
+		 	saida.println("Aluno reprovado.");
+		 }
+		 else{
+		 	saida.println("Aluno em exame.");
+		 	double n=sc.nextDouble();
+		 	saida.printf("Nota do exame: %.1f\n",n);
+		 	n+=media;
+		 	n/=2.0;
+		 	if(n>=5){
+		 		saida.println("Aluno aprovado.");
+		 	}
+		 	else{
+		 		saida.println("Aluno reprovado.");
+		 	}
+		 	saida.printf("Media final: %.1f\n",n);
+		 }
+
+	}
+
+}
