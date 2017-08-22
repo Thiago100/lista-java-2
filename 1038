@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(),b = sc.nextInt();
+        double total;
+        	if(a==1){
+		total = b*4.00;
+		saida.printf("Total: R$ %.2f\n",total);
+	}
+	if(a==2){
+		total = b*4.50;
+		saida.printf("Total: R$ %.2f\n",total);
+	}
+	if(a==3){
+		total = b*5.00;
+		saida.printf("Total: R$ %.2f\n",total);
+	}
+	if(a==4){
+		total = b*2.00;
+		saida.printf("Total: R$ %.2f\n",total);
+	}
+	if(a==5){
+		total = b*1.50;
+		saida.printf("Total: R$ %.2f\n",total);
+	}
+	}
+}
