@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int i;
+		double c,total,a = sc.nextDouble(),b,x;
+		if(a>=0.0 && a <=2000.00){
+			sa.printf("Isento\n");
+		}
+		else if(a>2000.00 && a<=3000.00){
+			x = (a-2000.00)*8/100;
+			total = x;
+			sa.printf("R$ %.2f\n",total);
+		}
+		else if(a>3000.00 && a<=4500.00){
+			x = (1000*8/100);
+			b = ((a-3000.00)*18/100);
+			total = x+b;
+			sa.printf("R$ %.2f\n",total);
+		}
+		else if(a>4500.00){
+			x = (1000*8/100);
+			b = (1500*18/100);
+			c = ((a-4500.00)*28/100);
+			total = x+b+c;
+			sa.printf("R$ %.2f\n",total);
+		}
+   }
+}
