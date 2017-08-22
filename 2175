@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		double o = sc.nextDouble(), b = sc.nextDouble(), i = sc.nextDouble();
+		if(o==b||o==i||b==i) sa.println("Empate");
+		if(o<b && o<i) sa.println("Otavio");
+		if(b<o && b<i) sa.println("Bruno");
+		if(i<o && i<b) sa.println("Ian");
+   }
+}
