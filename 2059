@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+        int x,p = sc.nextInt(),j1 = sc.nextInt(),j2 = sc.nextInt(),r = sc.nextInt(),a = sc.nextInt();
+        x = j1+j2;
+        if(p==0){
+            if(r==0){
+                if(a==0){
+                    if(x%2==0) sa.println("Jogador 2 ganha!");
+                    else sa.println("Jogador 1 ganha!");
+                }else{
+                    sa.println("Jogador 1 ganha!");
+                }
+            }else{
+                if(a==0) sa.println("Jogador 1 ganha!");
+                else sa.println("Jogador 2 ganha!");
+            }
+        }else{
+             if(r==0){
+                if(a==0){
+                    if(x%2==0) sa.println("Jogador 1 ganha!");
+                    else sa.println("Jogador 2 ganha!");
+                }else{
+                    sa.println("Jogador 1 ganha!");
+                }
+            }else{
+                if(a==0) sa.println("Jogador 1 ganha!");
+                else sa.println("Jogador 2 ganha!");
+            }
+        }
+
+	}
+}
