@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.io.*;
+import java.math.BigInteger;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a==61) saida.println("Brasilia");
+        else if(a==71) saida.println("Salvador");
+        else if(a==11) saida.println("Sao Paulo");
+        else if(a==21) saida.println("Rio de Janeiro");
+        else if(a==32) saida.println("Juiz de Fora");
+        else if(a==19) saida.println("Campinas");
+        else if(a==27) saida.println("Vitoria");
+        else if(a==31) saida.println("Belo Horizonte");
+        else saida.println("DDD nao cadastrado");
+
+	}
+}
