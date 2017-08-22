@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int x,a = sc.nextInt();
+		if(a<=10) sa.println("7");
+		else if(a>10 && a<=30){
+			x = 7+(a-10);
+			sa.println(x);
+		}
+		else if(a>30 && a<=100){
+			x = 27+((a-30)*2);
+			sa.println(x);
+		}
+		else if(a>100){
+			x = 167+((a-100)*5);
+			sa.println(x);
+		}
+		
+   }
+}
