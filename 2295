@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		double ga,al,a = sc.nextDouble(),b = sc.nextDouble(),c = sc.nextDouble(),d = sc.nextDouble();
+		ga = b/d;al = a/c;
+		if(ga<=al) sa.println("G");
+		else sa.println("A");
+   }
+}
