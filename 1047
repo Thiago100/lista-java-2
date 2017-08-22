@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*; 
+
+public class Main{
+	public static PrintStream saida=System.out;
+ 	public static Scanner sc=new Scanner(System.in);
+	 
+	
+	public static void main(String arg[]){
+
+		int a=sc.nextInt(),b=sc.nextInt(),x=sc.nextInt(),y=sc.nextInt();
+		int i,f;
+		i=(a*60)+b;
+		f=(x*60)+y;
+
+
+		int mod;
+		if(i!=0&&i<f){
+		i=f-i;
+		mod=i/60;
+
+		saida.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",mod,i%60);
+		}
+		else if(i==0){
+		saida.printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+		}
+		else if(i>f){
+			f=f+(24*60);
+			i=f-i;
+			mod=i/60;
+
+		saida.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",mod,i%60);
+		}
+}
+}
