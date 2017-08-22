@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(),b = sc.nextInt(),c = sc.nextInt();
+		if(c == a || (a+c)==b || (a+b)==c || (b+c)==a || a==b || b==c){
+        	sa.printf("S\n");
+    	}
+    	else{
+        	sa.printf("N\n");
+    	}
+		
+   }
+}
