@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream saida=System.out;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(),b = sc.nextInt(),c = sc.nextInt(),d = sc.nextInt();
+        if((b>c)&&(d>a)&&(c+d>a+b)&&(c>0)&&(d>0)&&(a%2==0)){
+            saida.printf("Valores aceitos\n");
+        }else{
+            saida.printf("Valores nao aceitos\n");
+        }
+	}
+}
